@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+$typography: (
+     // Title
+     T1_Bold_128: (
+               family: 'Roboto',
+               weight: bold,
+               size: vw(128),
+               line-height: 106%,
+          ),
+     T2_Bold_96: (
+          family: 'Roboto',
+          weight: bold,
+          size: vw(96),
+          line-height: 106%,
+     ),
+     T3_Bold_64: (
+          family: 'Roboto',
+          weight: bold,
+          size: vw(64),
+          line-height: 106%,
+     ),
+     T4_Bold_48: (
+          family: 'Roboto',
+          weight: bold,
+          size: vw(48),
+          line-height: 106%,
+     ),
+     T5_SemiBold_48: (
+          family: 'Roboto',
+          weight: semi-bold,
+          size: vw(48),
+          line-height: auto,
+     ),
+     T6_Bold_40: (
+          family: 'Roboto',
+          weight: bold,
+          size: vw(40),
+          line-height: 106%,
+     ),
+     T7_Bold_32: (
+          family: 'Roboto',
+          weight: bold,
+          size: vw(32),
+          line-height: 106%,
+     ),
+
+     // Subtitle
+     S1_SemiBold_36: (
+               family: 'Roboto',
+               weight: semi-bold,
+               size: vw(36),
+               line-height: auto,
+          ),
+     S2_SemiBold_24: (
+          family: 'Roboto',
+          weight: semi-bold,
+          size: vw(24),
+          line-height: 120.5%,
+     ),
+     S3_Regular_24: (
+          family: 'Roboto',
+          weight: regular,
+          size: vw(24),
+          line-height: 120%,
+     ),
+     S4_SemiBold_20: (
+          family: 'Roboto',
+          weight: semi-bold,
+          size: vw(20),
+          line-height: auto,
+     ),
+     S5_Medium_20: (
+          family: 'Roboto',
+          weight: Medium,
+          size: vw(20),
+          line-height: auto,
+     ),
+     S6_Regular_20: (
+          family: 'Roboto',
+          weight: regular,
+          size: vw(20),
+          line-height: 120.5%,
+     ),
+     S7_Light_20: (
+          family: 'Roboto',
+          weight: light,
+          size: vw(20),
+          line-height: auto,
+     ),
+
+     // Body
+     B1_Medium_16: (
+               family: 'Outfit',
+               weight: 500,
+               size: vw(16),
+               line-height: auto,
+          ),
+     B2_Regular_16: (
+          family: 'Outfit',
+          weight: regular,
+          size: vw(16),
+          line-height: auto,
+     ),
+     B3_Medium_14: (
+          family: 'Outfit',
+          weight: medium,
+          size: vw(14),
+          line-height: auto,
+     ),
+     B4_Regular_14: (
+          family: 'Outfit',
+          weight: regular,
+          size: vw(14),
+          line-height: 178.7%,
+     ),
+     B5_Light_14: (
+          family: 'Outfit',
+          weight: light,
+          size: vw(14),
+          line-height: 140%,
+     ),
+     B6_Light_14_Underline: (
+          family: 'Outfit',
+          weight: light,
+          size: vw(14),
+          line-height: 180%,
+          decoration: underline,
+     ),
+     B7_Regular_12: (
+          family: 'Outfit',
+          weight: regular,
+          size: vw(12),
+          line-height: vw(20),
+     )
+);

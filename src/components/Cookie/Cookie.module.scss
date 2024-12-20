@@ -1,0 +1,57 @@
+.Cookie-wrapper {
+     position: fixed;
+     width: 100vw;
+     height: 100vh;
+     display: flex;
+     align-items: flex-end;
+     justify-content: center;
+     flex-wrap: wrap;
+
+     bottom: 0;
+     z-index: 500;
+     padding: 20px;
+}
+
+.Cookie {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     flex-wrap: wrap;
+
+     padding: 30px;
+
+     background-color: $white;
+     border-radius: 16px;
+
+     &--button-container {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 20px;
+     }
+
+     & > span {
+          width: 70%;
+          color: $gray-600;
+          font-family: 'Outfit';
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 140%;
+     }
+
+     @media screen and (max-width: 480px) {
+          gap: 40px;
+
+          padding: 20px;
+          &--button-container {
+               width: 100%;
+
+               & > button {
+                    width: 100%;
+               }
+          }
+          & > span {
+               width: 100%;
+          }
+     }
+}

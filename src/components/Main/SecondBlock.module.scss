@@ -1,0 +1,118 @@
+.section-2 {
+     display: flex;
+     flex-direction: column;
+     padding-inline: $paddingWrapper;
+
+     //   height: 953px;
+
+     position: relative;
+
+     margin-bottom: 100px;
+
+     &__title {
+          font-size: 96px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 106%; /* 101.76px */
+          margin-bottom: 80px;
+     }
+
+     &--container {
+          display: flex;
+          flex-wrap: wrap;
+
+          gap: 130px;
+          & > div {
+               width: 400px;
+
+               h2 {
+                    display: flex;
+                    font-size: 36px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    position: relative;
+                    z-index: 10;
+
+                    &::before {
+                         content: '';
+                         width: 353.394px;
+                         height: 34.438px;
+
+                         position: absolute;
+                         bottom: 0;
+                         right: -10px;
+                         border-radius: 100px;
+
+                         transform: rotate(-1.693deg);
+
+                         z-index: -1;
+
+                         background-color: $primary-3;
+                    }
+               }
+          }
+
+          & > ul {
+               display: flex;
+               flex-wrap: wrap;
+               justify-content: flex-end;
+               flex: 1;
+
+               gap: 70px;
+
+               & > li {
+                    display: flex;
+                    flex-direction: column;
+                    width: 321px;
+
+                    gap: 20px;
+
+                    & > p {
+                         font-size: 48px;
+                         font-style: normal;
+                         font-weight: 700;
+                    }
+
+                    & > span {
+                         font-size: 24px;
+                         font-style: normal;
+                         font-weight: 400;
+                    }
+               }
+          }
+     }
+
+     &--vector {
+          position: absolute;
+          width: 418px;
+          height: 486px;
+
+          left: 0;
+          bottom: 0;
+     }
+
+     @media screen and (max-width: 480px) {
+          padding-inline: $paddingWrapperMobile;
+
+          &__title {
+               font-size: 40px;
+               margin-bottom: 30px;
+          }
+          &--container {
+               width: 100%;
+               & > h2 {
+                    font-size: 24px;
+               }
+               & > ul {
+                    width: 100%;
+                    & > li {
+                         width: 100%;
+                    }
+               }
+          }
+          &--vector {
+               display: none;
+          }
+     }
+}

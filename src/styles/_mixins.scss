@@ -1,0 +1,23 @@
+@use "sass:map";
+@use '_font' as *;
+
+@mixin flex-center {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+@mixin typography($key) {
+     $typography-map: $typography;
+     $styles: map.get($typography-map, $key);
+ 
+     font-family: map.get($styles, family);
+     font-weight: map.get($styles, weight);
+     font-size: map.get($styles, size);
+     line-height: map.get($styles, line-height);
+ 
+     @if map.has-key($styles, decoration) {
+         text-decoration: map.get($styles, decoration);
+     }
+ }
+ 

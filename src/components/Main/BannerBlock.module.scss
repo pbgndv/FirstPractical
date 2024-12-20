@@ -1,0 +1,54 @@
+.section-banner {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-wrap: wrap;
+     padding-block: 40px;
+
+     gap: 100px;
+
+     margin-top: 100px;
+
+     background-color: $primary-2;
+
+     & > li {
+          display: flex;
+          flex-direction: column;
+          & > h1 {
+               font-size: 64px;
+               font-style: normal;
+               font-weight: 700;
+               line-height: 106%; /* 67.84px */
+          }
+          & > p {
+               font-size: 24px;
+               font-style: normal;
+               font-weight: 600;
+               line-height: 120%; /* 28.8px */
+          }
+     }
+
+     @media screen and (max-width: 480px) {
+          padding-inline: $paddingWrapperMobile;
+          justify-content: flex-start;
+          & > li {
+               flex-direction: row;
+               align-items: center;
+               gap: 20px;
+
+               & > h1 {
+                    font-size: 40px;
+               }
+
+               & > p {
+                    font-size: 20px;
+               }
+          }
+     }
+
+     @media screen and (min-width: 481px) {
+          & > li > p > .line-break {
+               display: block;
+          }
+     }
+}

@@ -1,0 +1,86 @@
+.modal__label {
+     @include flex-center;
+     align-items: flex-start;
+     flex-direction: column;
+
+     gap: 4px;
+
+     width: 100%;
+
+     & > span {
+          color: $additional-2;
+     }
+}
+
+.modal__input {
+     display: flex;
+     width: 100%;
+     height: vh(40);
+
+     font-size: vh(14);
+     padding: vh(0) vh(12);
+
+     &::placeholder {
+          color: $input-text-color;
+     }
+
+     border-radius: vh(16);
+
+     transition:
+          border-color 0.3s ease,
+          background-color 0.3s ease;
+
+     &-container {
+          width: 100%;
+          display: flex;
+
+          border: vh(1) solid $input-border;
+          padding: 0 vh(12);
+          border-radius: vh(16);
+     }
+
+     &:hover {
+          .modal__input-container {
+               border: vh(1) solid $black;
+          }
+     }
+
+     &:focus {
+          border-color: $primary-1;
+          outline: none;
+     }
+
+     &--disabled {
+          background-color: $gray-200;
+          cursor: not-allowed;
+     }
+
+     &--loading {
+          padding-right: vh(40); // Учет места для лоадера
+     }
+
+     &--error {
+          border-color: $additional-2;
+     }
+}
+
+.loader {
+     position: absolute;
+     right: 12px;
+     width: 20px;
+     height: 20px;
+     border: 2px solid $gray-400;
+     //   border-top-color: $primary;
+     border-radius: 50%;
+     animation: spin 1s linear infinite;
+}
+
+.modal__required {
+     color: $additional-1;
+}
+
+.error {
+     //   color: $error;
+     font-size: 12px;
+     margin-top: 4px;
+}

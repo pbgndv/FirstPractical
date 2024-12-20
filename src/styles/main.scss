@@ -1,0 +1,37 @@
+@use 'sass:map';
+@use '_variables' as vars;
+@use 'breakpoints';
+@use '_mixins';
+@use '_functions';
+@use 'font' as *;
+@use 'reset';
+
+:root {
+     //  @include mixins.typography(B2_Regular_16);
+
+     color-scheme: light dark;
+     color: $gray-100;
+     background-color: $gray-600;
+
+     font-synthesis: none;
+     text-rendering: optimizeLegibility;
+     -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+     box-sizing: border-box;
+
+     &::-webkit-scrollbar {
+          display: none;
+     }
+}
+
+html {
+     @include typography(B2_Regular_16);
+}
+
+body {
+     width: 100vw;
+     height: 100%;
+}

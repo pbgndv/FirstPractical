@@ -1,0 +1,20 @@
+@use 'sass:map';
+
+$breakpoints: (
+     'xs': 320px,
+     'sm': 480px,
+     'md': 768px,
+     'lg': 1024px,
+     'xl': 1440px,
+     'xxl': 1920px,
+);
+
+@mixin respond-to($breakpoint) {
+     @if map.has-key($breakpoints, $breakpoint) {
+          @media (max-width: map.get($breakpoints, $breakpoint)) {
+               @content;
+          }
+     } @else {
+          @error "Нет точки останова под названием #{$breakpoint}";
+     }
+}
